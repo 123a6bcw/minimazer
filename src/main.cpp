@@ -16,9 +16,9 @@ int main(int argc, char* argv[]) {
     if (strcmp(argv[1], "-r") == 0) {
         //Main way to use tool. You write in console your input file, tool generates minimum machine and
         //prints images if starting and ending machine
-        new prettyPrinter(argv[2], "io/input");
+        new prettyPrinter(argv[2], "io/input.png");
         new Minimazer(argv[2], "io/output.txt");
-        new prettyPrinter("io/output.txt", "io/output");
+        new prettyPrinter("io/output.txt", "io/output.png");
     } else
     if (strcmp(argv[1], "-t") == 0) {
         //Building tests. See tests folder
@@ -31,9 +31,9 @@ int main(int argc, char* argv[]) {
             strcat(nn3, tf);
             strcat(nn4, tf);
             strcat(nn1, "/input.txt");
-            strcat(nn2, "/input");
+            strcat(nn2, "/input.png");
             strcat(nn3, "/output.txt");
-            strcat(nn4, "/output");
+            strcat(nn4, "/output.png");
 
             new prettyPrinter(nn1, nn2);
             new Minimazer(nn1, nn3);
