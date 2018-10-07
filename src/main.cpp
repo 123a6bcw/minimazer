@@ -25,6 +25,7 @@ int main(int argc, char* argv[]) {
         for (int i = 1; i <= numberOfTests; i++) {
             char nn1[400] = "tests/", nn2[400] = "tests/", nn3[400] = "tests/", nn4[400] = "tests/";
             char tf[400];
+            memset(tf, 0, 400);
             tf[0] = char('0' + i / 10), tf[1] = char('0' + i % 10);
             strcat(nn1, tf);
             strcat(nn2, tf);
